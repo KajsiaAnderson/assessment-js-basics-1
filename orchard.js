@@ -166,17 +166,17 @@ let pinkTons = []
 let sum = []
 
 for(let i = 0; i<7; i++){
-    fujiTons.push(6.5 / fujiAcres[i])
+    fujiTons.push(6.5 * fujiAcres[i])
 }
 console.log(fujiTons)
 
 for(let i = 0; i<7; i++){
-    galaTons.push(6.5 / galaAcres[i])
+    galaTons.push(6.5 * galaAcres[i])
 }
 console.log(galaTons)
 
 for(let i = 0; i<7; i++){
-    pinkTons.push(6.5 / pinkAcres[i])
+    pinkTons.push(6.5 * pinkAcres[i])
 }
 console.log(pinkTons)
 
