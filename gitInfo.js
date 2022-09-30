@@ -10,6 +10,9 @@
 */
 
 //CODE HERE
+let gitDefinition = "Git is a version control system."
+
+// console.log(gitDefinition)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +21,9 @@
 */
 
 //CODE HERE
+let gitHubDefinition = "GitHub is a code hosting platform for version control and collaboration."
+
+// console.log(gitHubDefinition)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +32,9 @@
 */
 
 //CODE HERE
+let gitInitDefinition = "Git Init initializes a local repository"
+
+// console.log(gitInitDefinition)
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -35,6 +44,10 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "Git Clone is used to copy an existing repo in a new directory, at another location"
+
+// console.log(gitCloneDefinition)
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +55,10 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "Git Status tells a user about the repo"
+
+// console.log(gitStatusDefinition)
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +70,12 @@
 */
 
 //CODE HERE
+let gitAddDefinition = "Git Add adds files to be tracked"
+let gitAddCode = "git add ."
+
+// console.log(gitAddDefinition)
+// console.log(gitAddCode)
+
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,7 +87,11 @@
 */
 
 //CODE HERE
+let gitCommitDefinition = "Git Commit creates a snapshot of the files the user is tracking"
+let gitCommitCode = 'git commit -m "initial commit"'
 
+// console.log(gitCommitDefinition)
+// console.log(gitCommitCode)
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +100,6 @@
 */
 
 //CODE HERE
+let gitPushDefinition = "Git Push is used to upload local repository content to a remote repository"
+
+// console.log(gitPushDefinition)
