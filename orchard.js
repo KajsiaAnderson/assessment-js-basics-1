@@ -50,7 +50,19 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let acres = []
 
+for(let i = 0; i<7; i++){
+acres.push((fujiAcres[i] + galaAcres[i] + pinkAcres[i]))
+}
+
+
+let totalAcres = 0
+for(let i = 0; i<7; i++){
+    totalAcres += acres[i]
+}
+
+console.log('Total acres:', totalAcres)
 
 
 
@@ -68,7 +80,10 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let numberOfDays = 21
+let averageDailyAcres = (totalAcres / numberOfDays) 
 
+console.log('The average number of acres picked per day:', averageDailyAcres)
 
 
 
@@ -106,8 +121,18 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+let i = 0
+while(i < 1){
+    if(acresLeft > 0){
+        (days += 1);
+        console.log((acresLeft - averageDailyAcres))
+    }
+    i++
+}
 
 
+
+console.log('Days:',days)
 
 // PROBLEM 4
 
@@ -135,11 +160,25 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+let sum = []
 
+for(let i = 0; i<7; i++){
+    fujiTons.push(6.5 / fujiAcres[i])
+}
+console.log(fujiTons)
 
+for(let i = 0; i<7; i++){
+    galaTons.push(6.5 / galaAcres[i])
+}
+console.log(galaTons)
+
+for(let i = 0; i<7; i++){
+    pinkTons.push(6.5 / pinkAcres[i])
+}
+console.log(pinkTons)
 
 
 
@@ -162,12 +201,24 @@ let days = 0
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
 
+for(let i = 0; i<7; i++){
+    fujiPounds += fujiTons[i]
+}
+console.log('Fuji Pounds:', fujiPounds * 2000)
 
+for(let i = 0; i<7; i++){
+    galaPounds += galaTons[i]
+}
+console.log('Gala Pounds:', galaPounds * 2000)
 
+for(let i = 0; i<7; i++){
+    pinkPounds += pinkTons[i]
+}
+console.log('Pink Pounds:', pinkPounds * 2000)
 
 
 
@@ -189,9 +240,13 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = (fujiPounds * 2000) * .89
+let galaProfit = (galaPounds * 2000) * .64
+let pinkProfit = (pinkPounds * 2000) * .55
+
+console.log('Fuji profit:', fujiProfit)
+console.log('Gala profit:', galaProfit)
+console.log('Pink profit:', pinkProfit)
 
 
 
@@ -209,3 +264,9 @@ let days = 0
 */
 
 // CODE HERE
+
+let totalProfit = (fujiProfit + galaProfit + pinkProfit)
+
+console.log('Total Profit:', totalProfit)
+
+// comments: I added up all the profit variables using the addition math operator.
